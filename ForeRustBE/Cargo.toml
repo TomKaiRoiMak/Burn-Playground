@@ -1,0 +1,12 @@
+[package]
+name = "ForeRustBE"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+burn = { version = "0.15", features = ["train", "wgpu"] }
+axum = { version = "0.7.7", features = ["multipart"] }
+tokio = { version = "1.40.0", features = ["full", "macros", "rt-multi-thread"] }
+serde = { version = "1.0", features = ["derive"] }
+tower-http = { version = "0.6.1", features = ["cors", "limit", "trace"] }
+serde_json = "1.0.1"
